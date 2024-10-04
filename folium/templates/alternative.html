@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5fd222527ce5818f9432a5cc045892f3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5fd222527ce5818f9432a5cc045892f3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5fd222527ce5818f9432a5cc045892f3 = L.map(
+                "map_5fd222527ce5818f9432a5cc045892f3",
+                {
+                    center: [45.35, -121.6972],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f17022c33135a1915a458cdffbb58784 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f17022c33135a1915a458cdffbb58784.addTo(map_5fd222527ce5818f9432a5cc045892f3);
+        
+    
+            var marker_4b62c5125f91108c70bed4e725c447b5 = L.marker(
+                [45.3288, -121.6625],
+                {}
+            ).addTo(map_5fd222527ce5818f9432a5cc045892f3);
+        
+    
+            var icon_02b7ea074b4ae8e29e4d391545e90aeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4b62c5125f91108c70bed4e725c447b5.setIcon(icon_02b7ea074b4ae8e29e4d391545e90aeb);
+        
+    
+        var popup_36bd470f53cdfcc203e9a7de964a1209 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_563a35792fe0b0aea7a7cbe520dd1a5d = $(`<div id="html_563a35792fe0b0aea7a7cbe520dd1a5d" style="width: 100.0%; height: 100.0%;">Mt. Hood Meadows</div>`)[0];
+                popup_36bd470f53cdfcc203e9a7de964a1209.setContent(html_563a35792fe0b0aea7a7cbe520dd1a5d);
+            
+        
+
+        marker_4b62c5125f91108c70bed4e725c447b5.bindPopup(popup_36bd470f53cdfcc203e9a7de964a1209)
+        ;
+
+        
+    
+    
+            marker_4b62c5125f91108c70bed4e725c447b5.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a2d6ffaa2b799bb084718ff9e0c2a8c = L.marker(
+                [45.3311, -121.7113],
+                {}
+            ).addTo(map_5fd222527ce5818f9432a5cc045892f3);
+        
+    
+            var icon_97cb80a8f9884a0004008849dc5c9e18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4a2d6ffaa2b799bb084718ff9e0c2a8c.setIcon(icon_97cb80a8f9884a0004008849dc5c9e18);
+        
+    
+        var popup_d7f033bde92d55fe6986d53f34a59e4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_305b10eccd3ce9c3869a0e090f1cbc3a = $(`<div id="html_305b10eccd3ce9c3869a0e090f1cbc3a" style="width: 100.0%; height: 100.0%;">Timberline Lodge</div>`)[0];
+                popup_d7f033bde92d55fe6986d53f34a59e4f.setContent(html_305b10eccd3ce9c3869a0e090f1cbc3a);
+            
+        
+
+        marker_4a2d6ffaa2b799bb084718ff9e0c2a8c.bindPopup(popup_d7f033bde92d55fe6986d53f34a59e4f)
+        ;
+
+        
+    
+    
+            marker_4a2d6ffaa2b799bb084718ff9e0c2a8c.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
